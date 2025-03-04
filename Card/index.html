@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f7f9fc;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 350px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 0 20px;
+        }
+
+        .card:hover {
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            transform: translateY(-5px);
+            transition: all 0.3s;
+        }
+
+        .header {
+            height: 120px;
+            background: linear-gradient(45deg, #a5d8ff, #74c0fc);
+            position: relative;
+        }
+
+        .profile-pic {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 4px solid white;
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            object-fit: cover;
+            background-color: #edf2ff;
+        }
+
+        .profile-pic:hover {
+            transform: translateX(-50%) scale(1.05);
+            transition: transform 0.2s;
+        }
+
+        .content {
+            padding: 60px 25px 30px;
+            text-align: center;
+        }
+
+        .name {
+            margin: 0 0 5px;
+            font-size: 22px;
+            color: #333;
+        }
+
+        .job {
+            margin: 0 0 20px;
+            font-size: 14px;
+            color: #5d93e1;
+            font-weight: 500;
+        }
+
+        .bio {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .social a {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            background: #eef3fa;
+            color: #5d93e1;
+            font-size: 16px;
+        }
+
+        .social a:hover {
+            background: #5d93e1;
+            color: white;
+            transform: translateY(-3px);
+            transition: all 0.2s;
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 300px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <img src="./Profile Pic02.jpg" alt="Profile" class="profile-pic">
+        </div>
+        <div class="content">
+            <h2 class="name">Krishna Yadav</h2>
+            <p class="job">Software Developer</p>
+            <p class="bio">Self-motivated Full-Stack Developer with expertise in MERN stack (MongoDB, Express.js, React.js, Node.js) and
+                Java.</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
